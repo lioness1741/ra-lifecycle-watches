@@ -1,0 +1,98 @@
+.clock__wrapper {
+    padding: 15px;
+  }
+  .clock {
+    position: relative;
+    background-color: #d4d4d4;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: #000;
+      z-index: 11;
+      width: 10px;
+      height: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+  }
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    background-color: #000;
+    transform: translateX(-50%);
+    transform-origin: bottom center;
+    z-index: 10;
+  
+    &.hour {
+      width: 7px;
+      height: 35%;
+    }
+    &.minute {
+      width: 3px;
+      height: 40%;
+      background-color: rgb(102, 102, 102);
+    }
+    &.second {
+      width: 2px;
+      height: 45%;
+      background-color: rgb(212, 67, 67);
+    }
+  }
+  
+  .number {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    text-align: center;
+  
+    --rotation: 0;
+    transform: rotate(var(--rotation));
+  
+    &1 {
+      --rotation: 30deg;
+    }
+    &2 {
+      --rotation: 60deg;
+    }
+    &3 {
+      --rotation: 90deg;
+    }
+    &4 {
+      --rotation: 120deg;
+    }
+    &5 {
+      --rotation: 150deg;
+    }
+    &6 {
+      --rotation: 180deg;
+    }
+    &7 {
+      --rotation: 210deg;
+    }
+    &8 {
+      --rotation: 240deg;
+    }
+    &9 {
+      --rotation: 270deg;
+    }
+    &10 {
+      --rotation: 300deg;
+    }
+    &11 {
+      --rotation: 330deg;
+    }
+  }
+  
+  .dell__btn {
+    display: flex !important;
+    justify-content: flex-end;
+  }

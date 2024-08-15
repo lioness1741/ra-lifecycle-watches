@@ -1,0 +1,24 @@
+@import '~antd/dist/antd.css';
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.ant-typography .ant-typography-secondary {
+  color: #fff;
+}
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-form {
+  margin-bottom: 16px;
+}
+.app-content {
+  min-height: 100vh;
+}
+
+.mb-3 {
+  margin-bottom: 30px;
+}
